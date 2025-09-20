@@ -9,9 +9,9 @@ const CometAnimation = () => {
 
   useEffect(() => {
     const createComets = () => {
-      const newComets = Array.from({ length: 15 }).map((_, i) => {
+      const newComets = Array.from({ length: 120 }).map((_, i) => {
         const top = Math.random() * 100;
-        const animationDelay = Math.random() * 15;
+        const animationDelay = Math.random() * 1;
         const transform = `rotate(${15 + Math.random() * 10}deg)`;
         return {
           id: i + Date.now(),
@@ -19,6 +19,7 @@ const CometAnimation = () => {
             top: `${top}vh`,
             animationDelay: `${animationDelay}s`,
             transform: transform,
+            animationDuration: '1s'
           },
         };
       });
@@ -26,6 +27,9 @@ const CometAnimation = () => {
     };
 
     createComets();
+    const interval = setInterval(createComets, 1000);
+    return () => clearInterval(interval);
+
   }, []);
 
   return (

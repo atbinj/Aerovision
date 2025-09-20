@@ -64,13 +64,13 @@
 @layer utilities {
   .comet {
     position: absolute;
-    width: 4px;
-    height: 4px;
-    background-color: hsl(var(--foreground));
+    width: 8px;
+    height: 8px;
+    background-color: hsl(var(--primary));
     border-radius: 50%;
-    box-shadow: 0 0 10px 2px hsl(var(--foreground));
+    box-shadow: 0 0 16px 4px hsl(var(--primary));
     opacity: 0;
-    animation: comet-fall 15s linear infinite;
+    animation: comet-fall 1s linear infinite;
   }
 
   .comet::after {
@@ -80,7 +80,7 @@
     transform: translateY(-50%);
     width: 150px;
     height: 1px;
-    background: linear-gradient(to left, transparent, hsl(var(--foreground)));
+    background: linear-gradient(to left, transparent, hsl(var(--primary)));
   }
 
   @keyframes comet-fall {

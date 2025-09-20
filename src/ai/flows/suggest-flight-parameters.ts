@@ -21,7 +21,7 @@ const SuggestFlightParametersInputSchema = z.object({
   missionRequirements: z
     .string()
     .describe(
-      `Specific goals or objectives of the flight (e.g., high-resolution mapping, thermal imaging). Include the sensor type and desired resolution.`
+      'Specific goals or objectives of the flight (e.g., high-resolution mapping, thermal imaging). Include the sensor type and desired resolution.'
     ),
 });
 export type SuggestFlightParametersInput = z.infer<typeof SuggestFlightParametersInputSchema>;
