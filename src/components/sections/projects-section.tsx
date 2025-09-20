@@ -33,7 +33,7 @@ const ProjectsSection = () => {
              <CardContent className="p-0">
                <video
                   className="w-full h-full object-cover aspect-video"
-                  src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
+                  src="https://aerovision.ir/images/video.mp4"
                   poster="https://picsum.photos/seed/aero-video/600/400"
                   autoPlay
                   loop
