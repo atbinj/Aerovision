@@ -9,7 +9,7 @@ const CometAnimation = () => {
 
   useEffect(() => {
     const createComets = () => {
-      const newComets = Array.from({ length: 3 }).map((_, i) => {
+      const newComets = Array.from({ length: 15 }).map((_, i) => {
         const top = Math.random() * 100;
         const animationDelay = Math.random() * 15;
         const transform = `rotate(${15 + Math.random() * 10}deg)`;
