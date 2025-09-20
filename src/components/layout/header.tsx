@@ -1,12 +1,11 @@
 'use client';
 
 import { useState } from 'react';
-import { Menu, X, Linkedin } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { Logo } from '@/components/icons/logo';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { ThemeToggle } from '@/components/theme-toggle';
-import { cn } from '@/lib/utils';
 
 const navItems = [
   { href: '#home', label: 'Home' },
@@ -44,17 +43,6 @@ export function Header() {
 
         <div className="flex flex-1 items-center justify-end space-x-2">
           <ThemeToggle />
-          <a
-            href="https://www.linkedin.com/in/aerovision-aerial-photogrammetry-startup-959784362/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            className="hidden md:inline-flex"
-          >
-            <Button variant="ghost" size="icon">
-              <Linkedin className="h-5 w-5" />
-            </Button>
-          </a>
           
           {/* Mobile Navigation */}
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
@@ -79,16 +67,6 @@ export function Header() {
                     {item.label}
                   </a>
                 ))}
-                 <a
-                    href="https://www.linkedin.com/in/aerovision-aerial-photogrammetry-startup-959784362/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-lg flex items-center"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    <Linkedin className="h-5 w-5 mr-2" />
-                    LinkedIn
-                  </a>
               </div>
             </SheetContent>
           </Sheet>

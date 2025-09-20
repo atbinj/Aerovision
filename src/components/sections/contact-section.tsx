@@ -8,7 +8,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
-import { Send, MapPin, Mail, Phone, Linkedin } from 'lucide-react';
+import { Send, MapPin, Mail, Phone } from 'lucide-react';
 
 const formSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
@@ -69,15 +69,6 @@ const ContactSection = () => {
               <div>
                 <h3 className="font-semibold text-lg">Phone</h3>
                 <p className="text-foreground/80">+98 912 500 2361</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <Linkedin className="w-6 h-6 mt-1 text-primary" />
-              <div>
-                <h3 className="font-semibold text-lg">LinkedIn</h3>
-                <a href="https://www.linkedin.com/in/aerovision-aerial-photogrammetry-startup-959784362/" target="_blank" rel="noopener noreferrer" className="text-foreground/80 hover:text-primary transition-colors">
-                  Follow us on LinkedIn
-                </a>
               </div>
             </div>
           </div>
