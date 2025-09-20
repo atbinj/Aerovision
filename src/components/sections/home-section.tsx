@@ -3,21 +3,22 @@ import { Button } from '@/components/ui/button';
 const Wave = () => (
   <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
     <svg
-      data-name="Layer 1"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1200 120"
       preserveAspectRatio="none"
-      className="relative block w-[calc(100%+1.3px)] h-[150px]"
+      className="relative block w-[calc(100%+1.3px)] h-[200px] md:h-[280px]"
     >
-      <defs>
-        <linearGradient id="wave-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" style={{ stopColor: 'hsl(var(--accent))', stopOpacity: 0.5 }} />
-          <stop offset="100%" style={{ stopColor: 'hsl(var(--primary))', stopOpacity: 0.5 }} />
-        </linearGradient>
-      </defs>
       <path
-        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-        fill="url(#wave-gradient)"
+        d="M0,120L1200,120L1200,0C1080,40,960,80,840,80C720,80,600,40,480,40C360,40,240,80,120,80C60,80,0,40,0,0Z"
+        fill="hsl(var(--accent) / 0.2)"
+      ></path>
+      <path
+        d="M0,120L1200,120L1200,40C1080,80,960,120,840,120C720,120,600,80,480,80C360,80,240,120,120,120C60,120,0,80,0,40Z"
+        fill="hsl(var(--accent) / 0.3)"
+      ></path>
+      <path
+        d="M0,120L1200,120L1200,80C1080,40,960,0,840,0C720,0,600,40,480,40C360,40,240,80,120,80C60,80,0,40,0,0Z"
+        fill="hsl(var(--card))"
       ></path>
     </svg>
   </div>
