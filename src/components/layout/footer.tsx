@@ -19,7 +19,7 @@ export function Footer() {
                 <Linkedin className="h-5 w-5" />
                 </Button>
             </a>
-            <a href="https://t.me/devatbin" target="_blank" rel="noopener noreferrer" className="text-xs text-white hover:text-primary transition-colors">
+            <a href="https://t.me/devatbin" target="_blank" rel="noopener noreferrer" className="text-xs text-foreground/80 hover:text-primary transition-colors">
                 designed with 🤍 by Atbin
             </a>
         </div>
