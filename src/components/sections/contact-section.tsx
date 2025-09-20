@@ -96,6 +96,21 @@ const ContactSection = () => {
           </Form>
         </div>
       </div>
+      <div className="container mx-auto px-4 mt-20">
+        <div className="aspect-w-16 aspect-h-9">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6482.02235940983!2d51.41562407738006!3d35.75112111893322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e05d938b7c9a1%3A0x3a72a1b1323942ee!2sShariati%20St%2C%20Tehran%2C%20Tehran%20Province%2C%20Iran!5e0!3m2!1sen!2sus!4v1700000000000"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen={false}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Aerovision Location"
+            className="rounded-lg shadow-lg filter grayscale invert-[95%] contrast-90"
+          ></iframe>
+        </div>
+      </div>
     </section>
   );
 };
