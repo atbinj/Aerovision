@@ -1,3 +1,40 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "project-1",
+      "description": "3D model render of Aerovision hardware.",
+      "imageUrl": "https://picsum.photos/seed/aero1/600/400",
+      "imageHint": "hardware render"
+    },
+    {
+      "id": "project-2",
+      "description": "A person holding the green Aerovision hardware device.",
+      "imageUrl": "https://picsum.photos/seed/aero2/600/400",
+      "imageHint": "handheld device"
+    },
+    {
+      "id": "project-3",
+      "description": "Software equipment box with wires and components.",
+      "imageUrl": "https://picsum.photos/seed/aero3/600/400",
+      "imageHint": "tech equipment"
+    },
+    {
+      "id": "project-4",
+      "description": "View from the cockpit of an aircraft during an operation.",
+      "imageUrl": "https://picsum.photos/seed/aero4/600/400",
+      "imageHint": "airplane cockpit"
+    },
+    {
+      "id": "project-5",
+      "description": "Aerial view of a landscape from the platform.",
+      "imageUrl": "https://picsum.photos/seed/aero5/600/400",
+      "imageHint": "aerial view"
+    },
+    {
+      "id": "project-6",
+      "description": "Aerial sensor image showing a colorful river and bridge.",
+      "imageUrl": "https://picsum.photos/seed/aero6/600/400",
+      "imageHint": "geospatial data"
+    }
+  ]
 }
